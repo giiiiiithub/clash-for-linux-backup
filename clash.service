@@ -1,0 +1,16 @@
+[Unit]
+Description=Clash daemon (Rule-based proxy)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+Restart=on-abort
+TimeoutStartSec=60
+WorkingDirectory=/root/dev/software/clash-for-linux-backup
+ExecStart=/root/dev/software/clash-for-linux-backup/start.sh 
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
