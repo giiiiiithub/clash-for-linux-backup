@@ -1,3 +1,7 @@
+# systemd自启动
+
+systemd文件： `clash.service`
+
 [TOC]
 
 # 项目介绍
