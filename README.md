@@ -1,6 +1,9 @@
 # systemd自启动
 
-systemd文件： `clash.service`
+1. systemd文件： `clash.service` 放置在 `/etc/systemd/system`
+2. `systemctl daemon-reload`
+3. `systemctl start clash.service`
+
 
 [TOC]
 
